@@ -1,0 +1,253 @@
+/* FORMATAÇÃO GERAL */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+}
+body h1{
+    font-size: 2rem;
+}
+body h2{
+    font-size: 1.5rem;
+}
+body h3{
+    font-size: 1rem;
+}
+
+
+/* FORMATAÇÃO DO MENU */
+header .menu-principal{
+    height: 60px;
+    background-color: #ffcc00;
+}
+header .menu-principal .container-menu{
+    max-width: 1024px;
+    margin: auto;
+    padding: 8px 0px;
+    display: flex;
+}
+header .menu-principal .container-menu .logo{
+    width: 100px;
+    height: auto;
+}
+header .menu-principal .container-menu .logo img{
+    width: 100%;
+}
+header .menu-principal .container-menu .description-logo{
+    margin: 0px 0px 0px 10px;
+}
+
+header .menu-principal .container-menu nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+header .menu-principal .container-menu nav ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: .9rem;
+}
+header .menu-principal .container-menu nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+header .menu-principal .container-menu nav ul li a:hover{
+    background-color: #000000;
+    color: white;
+    transition: background .5s;
+}
+
+
+
+header .banner{
+    height: 422px;
+}
+header .banner img{
+    width: 100%;
+}
+
+
+
+.container-geral{
+    margin-top: 30px;
+}
+.container-artigos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: auto;
+}
+.container-artigos .artigos{
+    max-width: 600px;
+}
+.container-artigos .artigos article{
+    margin-bottom: 40px;
+    border-bottom: solid 1px #828282;
+    padding-bottom: 20px;
+}
+.container-artigos .artigos article h1{
+    margin: 0px 0px 20px 0px;
+}
+.container-artigos .artigos article h2{
+    margin: 20px 0px 0px 0px;
+}
+.container-artigos .artigos article h3{
+    margin: 20px 0px 0px 0px;
+}
+.container-artigos .artigos article h1::after{
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: #ff0000;
+    display: block;
+    margin-top: 5px;
+}
+.container-artigos .artigos article .data{
+    color: #0000005c;
+    display: block;
+    margin-bottom: 20px;
+}
+.container-artigos .artigos article .imagem-artigo-1{
+    width: 100%;
+}
+.container-artigos .artigos article .imagem-artigo-1 img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+.container-artigos .artigos article .artigo{
+    text-align: justify;
+}
+.container-artigos .artigos article .artigo p{
+    line-height: 30px;
+    font-size: 1.2rem;
+    color: #303030;
+    margin-bottom: 10px;
+}
+.container-artigos .artigos article .artigo ul{
+    margin: 20px 0px 0px 0px;
+}
+.container-artigos .artigos article .artigo ul li{
+    list-style:inside;
+    margin: 5px 0px;
+    font-size: 19px;
+}
+/* Configurações só da agenda */
+.aganda-lista{
+    border-bottom: solid 1px rgba(0, 0, 0, 0.224);
+    padding: 20px 0px 0px 0px;
+}
+.aganda-lista a{
+    text-decoration: none;
+}
+.aganda-lista a:hover{
+    background-color: #ff0000;
+    color: #000000;
+}
+
+
+
+/* Formatação das barras laterais */ 
+.lateral-efeito{
+    max-width: 424px;
+}
+
+
+#lateral-direito{
+    padding: 0px 0px 0px 50px;
+    width: 424px;
+}
+#lateral-direito a{
+    text-decoration: none;
+    color: #000000;
+}
+.lateral-content{
+    display: flex;
+    border-left: solid 3px black;
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: #82828223;
+}
+.lateral-content:hover, a:hover{
+    background-color: black;
+    transition: background .5s;
+    color: white;
+}
+.lateral-content a{
+    text-decoration: none;
+}
+.lateral-content #texto{
+    width: 75%;
+    padding: 0px 0px 0px 5px;
+}
+.lateral-content #imagem{
+    width: 25%;
+}
+
+.material-symbols-outlined{
+    font-family: 'Material Icons';
+    font-size: 90px;
+}
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    height: 100px;
+}
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO RODA-PÉ
+------------------------------------------------------ */
+footer{
+    height: 200px;
+    padding: 30px 0px 20px 0px;
+}
+.rodape-content{
+    max-width: 1024px;
+    margin: auto;
+}
+.rodape-content a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-img img{
+    width: 80%;
+}
+.footer-text{
+    max-width: 1024px;
+    margin: 10px auto;
+}
+.footer-text p{
+    color: white;
+}
+#autor{
+    font-size: .7rem;
+    text-align: center;
+    font-weight: lighter;
+}

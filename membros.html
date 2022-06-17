@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <!-----------------------------------------------------
+            OBS: Não modificar nenhuma linha dentro do HEAD
+        ------------------------------------------------------->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GEMMARX</title>
+
+        <!-----------------------------------------------------
+            Carrega toda a formatação do site
+        ------------------------------------------------------>
+        <link rel="stylesheet" type="text/css" href="./main.css">
+
+        <!-----------------------------------------------------
+            Carrega a fonte utilizada no site
+        ------------------------------------------------------>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-----------------------------------------------------
+            Carrega os ícones utilizados no site
+        ------------------------------------------------------>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+
+        <!------------------------------------------------------------------
+            AVISO: Carrega html's externos para dentro da página index
+        ------------------------------------------------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                $('#menu').load("./menu.html");
+                $('#banner').load("./banner_1.html");
+                $('#lateral-direito').load("./lateral.html");
+                $('#footer').load("./footer.html");
+            });
+        </script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="menu-principal" id="menu">
+                
+            </div>
+
+            <div class="banner" id="banner">
+
+            </div>
+
+        </header>
+
+        <div class="container-geral">
+
+            <div class="container-artigos">
+                <!--
+                <div class="lateral" id="lateral-esquerdo">
+                    <div class="lateral-content" id="lc-esquerdo">
+                        Olá serei uma barra fixa!
+                    </div>
+                </div>
+                -->
+                <div class="artigos">
+
+                    <article>
+
+                        <h1>Conheça quem estuda com a gente</h1>
+                        
+                        <div class="artigo">
+
+                            <p>Sem definição no momento.</p>
+
+                        </div>
+                    </article>
+                    
+                </div>
+
+                <div class="lateral" id="lateral-direito">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer id="footer">
+            
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+</head>
+<body>
+
+    <div class="container-menu">
+        <div class="logo">
+            <img src="./3_gemmarxpng.png">
+        </div>
+
+        <div class="description-logo">
+            <p>Grupo de Estudos sobre o Método em Marx</p>
+        </div>
+    
+        <nav>
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./agenda.html">Agenda</a></li>
+                <li><a href="./membros.html">Membros</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./downloads.html">Downloads</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+    <div class="menu-secundario-mobile">
+
+        <!--
+        <div class="logo-mob">
+            <img src="/3_gemmarxpng.png">
+        </div>
+        -->
+        <div class="flexDiv">
+
+            <button class="sec_btn" onclick="openMulti();">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <div class="selectWrapper">
+                <div class="multiSelect" id="menu-0">
+
+                    <div class="item" onclick="openMulti();">
+                        <a href="./index.html">Início</a>
+                    </div>
+
+                    <div class="item" onclick="openMulti();">
+                        <a href="./sobre.html">Sobre</a>
+                    </div>
+
+                    <div class="item" onclick="openMulti();">
+                        <a href="./agenda.html">Agenda</a>
+                    </div>
+
+                    <div class="item" onclick="openMulti();">
+                        <a href="./membros.html">Membros</a>
+                    </div>
+
+                    <div class="item" onclick="openMulti();">
+                        <a href="./contato.html">Contato</a>
+                    </div>
+
+                    <div class="item" onclick="openMulti();">
+                        <a href="./downloads.html">Downloads</a>
+                    </div>
+
+                </div>
+            <div>
+        </div>
+    </div>
+  
+    <script src="./menu-secundario-mobile.js"></script>
+      
+  
+  
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+          
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+        }
+    </script>
+
+</body>
+</html>

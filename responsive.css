@@ -1,0 +1,607 @@
+/* Formatação do menu mobile */
+.menu-secundario-mobile{
+    display: flex;
+    place-content: center;
+}
+@media screen and (min-width:769px){
+    .menu-secundario-mobile{
+        display: none;
+    }
+}
+.menu-secundario-mobile .item{
+    margin: 5px 0px;
+    padding: 0px 10px;
+    text-align: center;
+}
+.flexDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px 0px;
+}
+.selectWrapper {
+    max-width: 600px;
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 100ms linear 0s;
+
+    z-index: 1;
+}
+.multiSelect {
+    box-sizing: border-box;
+    position: absolute;
+    max-width: 600px;
+    left: 0px;
+    right: 0;
+    background: #ff0000;
+    color: #000000;
+    transition: transform 300ms ease-in-out 0s, clip-path 300ms ease-in-out 0s;
+    border-bottom: solid 1px transparent;
+    color: #000000;
+}
+
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0px 0px;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-secundario-mobile button span{
+    font-size: 2.2rem;
+}
+button img{
+    width: 15%;
+}
+.menu-secundario-mobile a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 1920px
+------------------------------------------------------ */
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 1816px
+------------------------------------------------------ */
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 1440px
+------------------------------------------------------ */
+@media screen and (max-width: 1440px){
+    header .menu-principal{
+        padding: 10px 0px;
+        height: 60px;
+    }
+    header .menu-principal .container-menu{
+        padding: 0px 100px;
+    }
+
+    /* Formatação do banner */
+    header .banner{
+        height: 440px;
+    }
+
+    /* Formatação dos artigos */
+    .container-artigos .artigos{
+        max-width: 640px;
+        padding: 0px 10px;
+    }
+
+    .container-artigos .artigos article .imagem-artigo-1{
+        max-width: 626px;
+    }
+
+    /* Formatação da lateral */
+    .lateral-efeito{
+        max-width: 320px;
+    }
+    #lateral-direito{
+        padding: 0px 10px 0px 40px;
+        max-width: 369px;
+    }
+    .lateral-content{
+        justify-content: center;
+        align-items: center;
+    }
+    .material-symbols-outlined{
+        font-family: 'Material Icons';
+        font-size: 70px;
+    }
+}
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 1280px
+------------------------------------------------------ */
+
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 1024px
+------------------------------------------------------ */
+@media screen and (max-width: 1024px){
+    header .menu-principal{
+        padding: 10px 0px;
+        height: 60px;
+    }
+    header .menu-principal .container-menu{
+        padding: 0px 100px;
+    }
+
+    /* Formatação do banner */
+    header .banner{
+        height: 320px;
+    }
+
+    /* Formatação dos artigos */
+    .container-artigos .artigos{
+        max-width: 640px;
+        padding: 0px 10px;
+    }
+
+    .container-artigos .artigos article .imagem-artigo-1{
+        max-width: 626px;
+    }
+    .artigo{
+        margin: 20px 0px;
+    }
+
+    /* Formatação da lateral */
+    .lateral-efeito{
+        max-width: 320px;
+    }
+    #lateral-direito{
+        padding: 0px 10px 0px 40px;
+        max-width: 369px;
+    }
+    .lateral-content{
+        justify-content: center;
+        align-items: center;
+    }
+    .material-symbols-outlined{
+        font-family: 'Material Icons';
+        font-size: 70px;
+    }
+}
+
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 768px
+------------------------------------------------------ */
+@media screen and (max-width: 768px){
+    .menu-secundario-mobile button span{
+        font-size: 2.1rem;
+    }
+    button img{
+        width: 6%;
+    }
+    header .menu-principal{
+        padding: 10px 0px;
+        height: 45px;
+    }
+    header .menu-principal .container-menu{
+        display: none;
+    }
+
+    /* Formatação do banner */
+    header .banner{
+        height: 240px;
+    }
+
+
+    /* Formatação dos artigos */
+    .container-artigos .artigos{
+        max-width: 768px;
+        padding: 0px 15px;
+        margin: auto;
+    }
+
+    .container-artigos .artigos article .imagem-artigo-1{
+        max-width: 740px;
+        margin: auto;
+    }
+    .artigo{
+        margin: 20px 0px;
+    }
+
+
+    /* Formatação da lateral */
+    .lateral-efeito{
+        max-width: 768px;
+        margin: auto;
+    }
+    #lateral-direito{
+        padding: 0px 10px 0px 15px;
+        max-width: 768px;
+        margin: auto;
+    }
+}
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 601px
+------------------------------------------------------ */
+@media screen and (max-width: 600px){
+    .menu-secundario-mobile button span{
+        font-size: 2.1rem;
+    }
+    button img{
+        width: 11%;
+    }
+    header .menu-principal{
+        padding: 10px 0px;
+        height: 45px;
+    }
+    header .menu-principal .container-menu{
+        display: none;
+    }
+
+    /* Formatação do banner */
+    header .banner{
+        height: 190px;
+    }
+
+
+    /* Formatação dos artigos */
+    .container-artigos .artigos{
+        max-width: 600px;
+        padding: 0px 15px;
+        margin: auto;
+    }
+
+    .container-artigos .artigos article .imagem-artigo-1{
+        max-width: 570px;
+        margin: auto;
+    }
+    .artigo{
+        margin: 20px 0px;
+    }
+
+
+    /* Formatação da lateral */
+    .lateral-efeito{
+        max-width: 600px;
+        margin: auto;
+    }
+    #lateral-direito{
+        padding: 0px 10px 0px 15px;
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 425px
+------------------------------------------------------ */
+@media screen and (max-width: 425px){
+    .menu-secundario-mobile button span{
+        font-size: 2.1rem;
+    }
+    button img{
+        width: 11%;
+    }
+    header .menu-principal{
+        padding: 10px 0px;
+        height: 45px;
+    }
+    header .menu-principal .container-menu{
+        display: none;
+    }
+
+    /* Formatação do banner */
+    header .banner{
+        height: 130px;
+    }
+
+
+    /* Formatação dos artigos */
+    .container-artigos .artigos{
+        max-width: 425px;
+        padding: 0px 15px;
+        margin: auto;
+    }
+
+    .container-artigos .artigos article .imagem-artigo-1{
+        max-width: 400px;
+        margin: auto;
+    }
+    .artigo{
+        margin: 20px 0px;
+    }
+
+
+    /* Formatação da lateral */
+    .lateral-efeito{
+        max-width: 425px;
+        margin: auto;
+    }
+    #lateral-direito{
+        padding: 0px 10px 0px 15px;
+        max-width: 425px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 414px
+------------------------------------------------------ */
+@media screen and (max-width: 414px){
+    .menu-secundario-mobile button span{
+        font-size: 2.1rem;
+    }
+    button img{
+        width: 11%;
+    }
+    header .menu-principal{
+        padding: 10px 0px;
+        height: 45px;
+    }
+    header .menu-principal .container-menu{
+        display: none;
+    }
+
+    /* Formatação do banner */
+    header .banner{
+        height: 120px;
+    }
+
+
+    /* Formatação dos artigos */
+    .container-artigos .artigos{
+        max-width: 414px;
+        padding: 0px 15px;
+        margin: auto;
+    }
+
+    .container-artigos .artigos article .imagem-artigo-1{
+        max-width: 380px;
+        margin: auto;
+    }
+    .artigo{
+        margin: 20px 0px;
+    }
+
+
+    /* Formatação da lateral */
+    .lateral-efeito{
+        max-width: 414px;
+        margin: auto;
+    }
+    #lateral-direito{
+        padding: 0px 10px 0px 15px;
+        max-width: 414px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 375px
+------------------------------------------------------ */
+@media screen and (max-width: 375px){
+    .menu-secundario-mobile button span{
+        font-size: 2.1rem;
+    }
+    button img{
+        width: 11%;
+    }
+    header .menu-principal{
+        padding: 10px 0px;
+        height: 45px;
+    }
+    header .menu-principal .container-menu{
+        display: none;
+    }
+
+    /* Formatação do banner */
+    header .banner{
+        height: 120px;
+    }
+
+
+    /* Formatação dos artigos */
+    .container-artigos .artigos{
+        max-width: 375px;
+        padding: 0px 15px;
+        margin: auto;
+    }
+
+    .container-artigos .artigos article .imagem-artigo-1{
+        max-width: 345px;
+        margin: auto;
+    }
+    .artigo{
+        margin: 20px 0px;
+    }
+
+
+    /* Formatação da lateral */
+    .lateral-efeito{
+        max-width: 375px;
+        margin: auto;
+    }
+    #lateral-direito{
+        padding: 0px 10px 0px 15px;
+        max-width: 375px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 360px
+------------------------------------------------------ */
+@media screen and (max-width: 360px){
+    .menu-secundario-mobile button span{
+        font-size: 1.8rem;
+    }
+    button img{
+        width: 14%;
+    }
+    header .menu-principal{
+        padding: 10px 0px;
+        height: 40px;
+    }
+    header .menu-principal .container-menu{
+        display: none;
+    }
+
+    /* Formatação do banner */
+    header .banner{
+        height: 100px;
+    }
+
+
+    /* Formatação dos artigos */
+    .container-geral{
+        padding: 0px 15px;
+    }
+    .container-artigos .artigos{
+        max-width: 360px;
+        padding: 0px;
+    }
+
+    .container-artigos .artigos article .imagem-artigo-1{
+        max-width: 330px;
+        margin: auto;
+    }
+    .artigo{
+        margin: 20px 0px;
+    }
+
+
+    /* Formatação da lateral */
+    .lateral-efeito{
+        max-width: 360px;
+        margin: auto;
+    }
+    #lateral-direito{
+        padding: 0px 10px 0px 0px;
+        max-width: 360px;
+        margin: auto;
+    }
+
+
+    footer{
+        height: 200px;
+        padding: 20px 15px;
+    }
+    .footer-text p{
+        color: white;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------
+FORMATAÇÃO PARA DISPOSITIVOS ATÉ 320px
+------------------------------------------------------ */
+@media screen and (max-width: 320px){
+    .menu-secundario-mobile button span{
+        font-size: 1.8rem;
+    }
+    button img{
+        width: 14%;
+    }
+    header .menu-principal{
+        padding: 10px 0px;
+        height: 40px;
+    }
+    header .menu-principal .container-menu{
+        display: none;
+    }
+
+    /* Formatação do banner */
+    header .banner{
+        height: 100px;
+    }
+
+
+    /* Formatação dos artigos */
+    .container-geral{
+        padding: 0px 15px;
+    }
+    .container-artigos .artigos{
+        max-width: 320px;
+        padding: 0px;
+    }
+
+    .container-artigos .artigos article .imagem-artigo-1{
+        max-width: 290px;
+        margin: auto;
+    }
+    .artigo{
+        margin: 20px 0px;
+    }
+
+
+    /* Formatação da lateral */
+    .lateral-efeito{
+        max-width: 320px;
+        margin: auto;
+    }
+    #lateral-direito{
+        padding: 0px 10px 0px 0px;
+        max-width: 320px;
+        margin: auto;
+    }
+
+
+    footer{
+        height: 200px;
+        padding: 20px 15px;
+    }
+    .footer-text p{
+        color: white;
+        text-align: center;
+    }
+}
