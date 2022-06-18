@@ -123,6 +123,7 @@ header .banner img{
 }
 .container-artigos .artigos article .artigo{
     text-align: justify;
+    margin-top: 20px;
 }
 .container-artigos .artigos article .artigo p{
     line-height: 30px;
